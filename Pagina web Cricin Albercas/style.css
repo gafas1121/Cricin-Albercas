@@ -1,0 +1,165 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuente y fondo general */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  background-image: url(/cricin.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Encabezado */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #005f73;
+  padding: 15px 30px;
+}
+
+header .logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  color: #e0fbfc;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero / Banner */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: url("https://via.placeholder.com/1200x400") center/cover no-repeat;
+  color: #4f749e;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  background-color: #ee9b00;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.hero .btn:hover {
+  opacity: 0.9;
+}
+
+/* Productos */
+.productos {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.productos h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.productos .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.producto-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto-card h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+/* Sobre Nosotros */
+.sobre-nosotros {
+  padding: 60px 20px;
+  background-color: #e0fbfc;
+  text-align: center;
+}
+
+.sobre-nosotros p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+/* Contacto */
+.contacto {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contacto form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: grid;
+  gap: 15px;
+}
+
+.contacto input,
+.contacto textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contacto button {
+  background-color: #005f73;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contacto button:hover {
+  background-color: #004f63;
+}
+
+/* Pie de página */
+footer {
+  background-color: #005f73;
+  color: #e0fbfc;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
